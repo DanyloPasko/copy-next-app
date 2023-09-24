@@ -1,4 +1,3 @@
-// pages/api/data/questions.js
 
 import { questions } from "./data/questions";
 

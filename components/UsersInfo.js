@@ -1,10 +1,10 @@
 import Heading from "./Heading";
 
-const UsersInfo = ({ contact }) => {
-  const { name, email, address } = contact || {};
+const UsersInfo = ({ user }) => {
+  const { name, email, address } = user || {};
   const { street, suite, city, zipcode } = address || {};
 
-  if (!contact) {
+  if (!user) {
     return <Heading tag="h3" text="Empty contact" />
   }
 

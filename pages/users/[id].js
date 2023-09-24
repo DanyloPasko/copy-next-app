@@ -13,16 +13,16 @@ export const getServerSideProps = async (context) => {
   }
 
   return {
-    props: { contact: data },
+    props: { user: data },
   }
 };
 
-const Contact = ({ contact }) => (
+const Contact = ({ user }) => (
   <>
     <Head>
       <title>Contact page</title>
     </Head>
-    <UsersInfo contact={contact} />
+    <UsersInfo user={user} />
   </>
 );
 

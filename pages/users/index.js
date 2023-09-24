@@ -13,30 +13,30 @@ export const getServerSideProps = async () => {
       };
     }
 
-    const limitedContacts = data.slice(0, 5);
+    const limitedUsers = data.slice(0, 5);
 
     return {
-      props: { contacts: limitedContacts },
+      props: { users: limitedUsers },
     };
   } catch (error) {
-    console.error('Ошибка при получении данных:', error);
+    console.error('Помилка при отриманні інформації:', error);
     return {
       props: {
-        contacts: [],
+        users: [],
       },
     };
   }
 };
 
-const Contacts = ({ contacts }) => { 
+const Users = ({ users }) => { 
   return (
     <>
       <Head>
-        <title>Contacts</title>
+        <title>Users</title>
       </Head>
       <Heading text="Contacts list:" />
       <ul>
-        {contacts && contacts.map(({ id, name }) => (
+        {users && users.map(({ id, name }) => (
           <li key={id}>
             <Link href={`/users/${id}`}>{name}</Link>
           </li>
@@ -46,4 +46,4 @@ const Contacts = ({ contacts }) => {
   );
 };
 
-export default Contacts;
+export default Users;
