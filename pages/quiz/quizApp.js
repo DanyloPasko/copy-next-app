@@ -162,7 +162,7 @@ export const getStaticProps = async () => {
       },
     };
   } catch (error) {
-    console.error('Ошибка при чтении файла с вопросами:', error);
+    console.error('Помилка при читанні файлу', error);
     return {
       props: {
         questions: [],
