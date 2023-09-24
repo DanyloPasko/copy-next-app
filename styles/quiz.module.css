@@ -1,0 +1,56 @@
+
+
+.container {
+  background-color: azure;
+  width: 300px;
+  margin: 15vh auto;
+  padding: 50px;
+  border-radius: 20px;
+  color: black;
+}
+
+.answers {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.enter {
+  font-size: medium;
+  margin: 20px 0 0 0;
+  width: 140px;
+  height: 25px;
+}
+
+.questions-list {
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.custom {
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.custom:hover {
+  background-color: bisque;
+  cursor: pointer;
+}
+
+.active {
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.active:hover {
+  cursor: pointer;
+  background-color: bisque;
+}

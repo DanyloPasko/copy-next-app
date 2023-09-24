@@ -6,7 +6,7 @@ body {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(to bottom, #4e54c8, #8f94fb);
+  background: linear-gradient(to bottom, #e60808, #525aee);
   color: #fff;
   font-size: 20px;
 }
@@ -21,8 +21,7 @@ main {
   padding: 20px;
 }
 
-header,
-footer {
+header {
   min-height: 80px;
 }
 
@@ -37,19 +36,6 @@ header {
   padding: 0 20px;
 }
 
-footer {
-  background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.7),
-    rgba(0, 0, 0, 0.5)
-  );
-  text-align: center;
-  font-size: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-}
 
 a {
   color: #fff;

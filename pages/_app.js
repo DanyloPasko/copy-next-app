@@ -1,7 +1,6 @@
-import Image from "next/image";
 import Head from "next/head";
 import Layout from "../components/Layout";
-import '../styles/globals.scss';
+import '../styles/globals.css';
 
 const MyApp = ({ Component, pageProps }) => (
   <Layout>
