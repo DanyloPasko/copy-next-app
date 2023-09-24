@@ -123,7 +123,7 @@ export default function QuizApp({questions}) {
 
 export const getStaticProps = async () => {
   try {
-    const response = await fetch('http://localhost:3000/api/Questions/');
+    const response = await fetch(`${process.env.API_HOST}/Questions/`);
     const data = await response.json();
 
     return {
