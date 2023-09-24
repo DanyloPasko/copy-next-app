@@ -1,6 +1,6 @@
 import Heading from "./Heading";
 
-const ContactInfo = ({ contact }) => {
+const UsersInfo = ({ contact }) => {
   const { name, email, address } = contact || {};
   const { street, suite, city, zipcode } = address || {};
 
@@ -23,4 +23,4 @@ const ContactInfo = ({ contact }) => {
   );
 }
 
-export default ContactInfo;
+export default UsersInfo;

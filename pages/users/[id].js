@@ -1,5 +1,5 @@
 import Head from "next/head";
-import ContactInfo from "../../components/ContactInfo";
+import UsersInfo from "../../components/UsersInfo";
 
 export const getServerSideProps = async (context) => {
   const { id } = context.params;
@@ -22,7 +22,7 @@ const Contact = ({ contact }) => (
     <Head>
       <title>Contact page</title>
     </Head>
-    <ContactInfo contact={contact} />
+    <UsersInfo contact={contact} />
   </>
 );
 

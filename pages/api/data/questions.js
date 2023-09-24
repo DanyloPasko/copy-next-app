@@ -1,5 +1,3 @@
-// pages/api/data/questions.js
-
 export const questions = [
   {
     question: '2 + 2 ?',
@@ -32,4 +30,3 @@ export const questions = [
     correctAnswer: 1,
   },
 ];
-
