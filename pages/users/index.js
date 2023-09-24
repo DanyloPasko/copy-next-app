@@ -13,7 +13,6 @@ export const getServerSideProps = async () => {
       };
     }
 
-    // Ограничиваем массив первыми 5 пользователями
     const limitedContacts = data.slice(0, 5);
 
     return {
